@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Apollo_Hospital.WebTesting.refrence_Apollo_StandAlone_Testcase2">
+        <methods>
+          <include name="Verifications"/>
+          <include name="LaunchApplication"/>
+          <include name="teardown"/>
+          <include name="goToPage"/>
+        </methods>
+      </class> <!-- Apollo_Hospital.WebTesting.refrence_Apollo_StandAlone_Testcase2 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
