@@ -35,7 +35,7 @@ public class BaseTest {
 	@AfterMethod(alwaysRun=true)
 	public void teardown()
 	{
-		driver.close();
+		driver.quit();
 	}
 	
 }

@@ -5,10 +5,9 @@
     <classes>
       <class name="Apollo_Hospital.WebTesting.refrence_Apollo_StandAlone_Testcase2">
         <methods>
-          <include name="Verifications"/>
           <include name="LaunchApplication"/>
           <include name="teardown"/>
-          <include name="goToPage"/>
+          <include name="appointment"/>
         </methods>
       </class> <!-- Apollo_Hospital.WebTesting.refrence_Apollo_StandAlone_Testcase2 -->
     </classes>

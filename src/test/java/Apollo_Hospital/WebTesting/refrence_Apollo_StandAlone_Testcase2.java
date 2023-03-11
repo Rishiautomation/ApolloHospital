@@ -58,6 +58,20 @@ public class refrence_Apollo_StandAlone_Testcase2 extends BaseTest{
 		return new Object[][] {{"Hospitals In Bhubaneshwar","CyberKnife"}};
 	}
 	
+	
+	
+	@Test
+	public void appointment() throws InterruptedException {
+		Book_Appointment bookappointment=new Book_Appointment(driver);
+		 bookappointment.doctorAppointment();
+		 NewPageAppointment newpageappointment=bookappointment.apoint();
+		 newpageappointment.NewPageNavigation();
+		 newpageappointment.Findcities("New Delhi");
+		 MedicineandEssentials medical=newpageappointment.doctorlist();	
+		 medical.medicine();
+		 
+		 
+	}
 }
 	
 	

@@ -3,6 +3,7 @@ package Apollo_Hospital.AbstactClass;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -68,8 +69,15 @@ public class Abstractthings {
 		
 		
 		   String pageTitle=driver.getTitle();
-		  return pageTitle;  
+		  return pageTitle;  		
+	}
+	
+	public void VisiblityofAllElement(List<WebElement> findBy) {
+	
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfAllElements(findBy));
 		
 		
 	}
+	
 }
